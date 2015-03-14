@@ -36,6 +36,15 @@ MainWindow::MainWindow(QWidget *parent) :
     diff->addWidget(rmedium);
     diff->addWidget(rhard);
 
+    modegroup = new QButtonGroup();
+    modegroup->addButton(earth);
+    modegroup->addButton(space);
+
+    diffgroup = new QButtonGroup();
+    diffgroup->addButton(reasy);
+    diffgroup->addButton(rmedium);
+    diffgroup->addButton(rhard);
+
     combo = new QHBoxLayout();
     combo->addLayout(modes);
     combo->addLayout(diff);
